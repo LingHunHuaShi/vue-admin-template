@@ -1,0 +1,79 @@
+{
+  "id": "4166865",
+  "name": "板子前端",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1014",
+      "name": "硬盘",
+      "font_class": "yingpan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1045410",
+      "name": "内存",
+      "font_class": "neicun",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "1288158",
+      "name": "智能算法",
+      "font_class": "zhinengsuanfa",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "1305047",
+      "name": "网络",
+      "font_class": "wangluo",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "1305122",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "3456457",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    },
+    {
+      "icon_id": "5387673",
+      "name": "云下载",
+      "font_class": "yunxiazai",
+      "unicode": "eb2c",
+      "unicode_decimal": 60204
+    },
+    {
+      "icon_id": "5387732",
+      "name": "登出",
+      "font_class": "dengchu",
+      "unicode": "eb45",
+      "unicode_decimal": 60229
+    },
+    {
+      "icon_id": "8474229",
+      "name": "cpu",
+      "font_class": "cpu",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "27253675",
+      "name": "重置",
+      "font_class": "zhongzhi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}

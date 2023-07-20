@@ -2,7 +2,7 @@
   <div class="dashboard-container">
     <el-row class="dashboard-row" :gutter="20">
       <el-col class="dashboard-col" :span="12">
-        <el-card class="box-card">
+        <el-card class="box-card" @click.native="openAlgorithm">
           <div slot="header">
             <span>运行中的算法</span>
           </div>
@@ -81,6 +81,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import '/iconfont/iconfont.css'
+import router from '@/router'
 
 export default {
   name: 'Dashboard',
@@ -88,6 +89,11 @@ export default {
     ...mapGetters([
       'name'
     ])
+  },
+  methods: {
+    openAlgorithm() {
+      router.push('/algorithm/index')
+    }
   }
 }
 </script>

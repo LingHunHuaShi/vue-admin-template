@@ -1,7 +1,7 @@
 <template>
+  <div class="wrapper">
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
-
       <div class="title-container">
         <h3 class="title">Login Form</h3>
       </div>
@@ -49,6 +49,7 @@
       </div>
 
     </el-form>
+  </div>
   </div>
 </template>
 
@@ -139,6 +140,16 @@ $cursor: #fff;
   }
 }
 
+.wrapper{
+  background: url("../../assets/test.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  justify-content: fix-end;
+  align-items: center;
+}
+
 /* reset element-ui css */
 .login-container {
   .el-input {
@@ -180,7 +191,6 @@ $light_gray:#eee;
 .login-container {
   min-height: 100%;
   width: 100%;
-  background-color: $bg;
   overflow: hidden;
 
   .login-form {
@@ -190,6 +200,7 @@ $light_gray:#eee;
     padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
+    background-color: white;
   }
 
   .tips {

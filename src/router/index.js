@@ -71,16 +71,24 @@ export const constantRoutes = [
   {
     path: '/algorithm',
     component: Layout,
-    redirect: '/algorithm/index',
+    // redirect: '/algorithm/installed/index',
+    redirect: 'noRedirect',
+    meta: { title: '算法管理', icon: 'el-icon-office-building' },
     children: [
       {
-        path: 'index',
-        name: '算法管理',
-        meta: { title: '算法管理', icon: 'el-icon-office-building' },
-        component: () => import('@/views/algorithm/index')
+        path: '/installed/index',
+        name: '已部署的算法',
+        meta: { title: '已部署的算法' },
+        component: () => import('@/views/algorithm/installed/index.vue')
       },
       {
-        path: 'detail',
+        path: '/onCloud/index',
+        name: '云端算法',
+        meta: { title: '云端算法' },
+        component: () => import('@/views/algorithm/onCloud/index.vue')
+      },
+      {
+        path: 'installed/detail',
         name: '详情',
         meta: { title: '详情' },
         component: () => import('@/views/algorithm/detail'),
@@ -91,12 +99,26 @@ export const constantRoutes = [
   {
     path: '/settings',
     component: Layout,
+    redirect: 'noRedirect',
+    meta: { title: '设置', icon: 'el-icon-setting' },
     children: [
       {
         path: 'index',
         name: '设置',
         component: () => import('@/views/settings/index'),
-        meta: { title: '设置', icon: 'el-icon-setting' }
+        meta: { title: '本机设置' }
+      },
+      {
+        path: 'user',
+        name: '用户管理',
+        component: () => import('@/views/settings/index'),
+        meta: { title: '用户管理' }
+      },
+      {
+        path: 'cloud',
+        name: '云端通信',
+        component: () => import('@/views/settings/index'),
+        meta: { title: '云端通信' }
       }
     ]
   },

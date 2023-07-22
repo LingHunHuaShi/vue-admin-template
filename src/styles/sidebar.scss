@@ -10,7 +10,7 @@
   .sidebar-container {
     transition: width 0.28s;
     width: $sideBarWidth !important;
-    background-color: #fff0f5;
+    background-color: $menuBg;
     height: 100%;
     position: fixed;
     font-size: 0px;
@@ -71,13 +71,10 @@
     // menu hover
     .submenu-title-noDropdown,
     .el-submenu__title {
-        background-color: #fff0f5 !important;
       &:hover {
-        background-color: #000f0a !important;
+        background-color: $menuHover !important;
       }
     }
-
-
 
     .is-active>.el-submenu__title {
       color: $subMenuActiveText !important;
@@ -226,6 +223,4 @@
       border-radius: 20px;
     }
   }
-
-
 }

@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-Vue.use(Router)
-
 /* Layout */
 import Layout from '@/layout'
 import '/iconfont/iconfont.css'
+
+Vue.use(Router)
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -109,17 +108,30 @@ export const constantRoutes = [
         meta: { title: '本机设置' }
       },
       {
-        path: 'user',
+        path: 'users',
         name: '用户管理',
-        component: () => import('@/views/settings/index'),
+        component: () => import('@/views/settings/users/index'),
         meta: { title: '用户管理' }
       },
       {
-        path: 'cloud',
+        path: 'cloudPlatformComunication',
         name: '云端通信',
-        component: () => import('@/views/settings/index'),
+        component: () => import('@/views/settings/cloudPlatformComunication/index'),
         meta: { title: '云端通信' }
+      },
+      {
+        path: 'cases',
+        name: '事务报告',
+        component: () => import('@/views/settings/cases/index'),
+        meta: { title: '事务报告' }
+      },
+      {
+        path: 'sumbitTicket',
+        name: '事务提交',
+        component: () => import('@/views/settings/submitTicket/index'),
+        meta: { title: '事务提交' }
       }
+
     ]
   },
 
